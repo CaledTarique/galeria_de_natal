@@ -1,0 +1,13 @@
+<div class="card flex justify-content-center">
+
+    @for (item of photos; track item.name) {
+        <p-image class="grid"
+        [src]="item.itemImageSrc" 
+        [previewImageSrc]="item.thumbnailImageSrc" 
+        alt="Image" 
+        width="250" 
+        [preview]="true" />
+        } @empty {
+        <li>There are no items.</li>
+        }
+</div>

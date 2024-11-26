@@ -6,11 +6,12 @@
 </div>
 
 @switch (section) {
-    @case ('0') {
-      Case A.
-    }
     @case ('1') {
-      Case B.
+      <app-gallery style="width: 100vw;"></app-gallery>
+
+    }
+    @case ('2') {
+      <app-about></app-about>
     }
     @default {
       Default case.

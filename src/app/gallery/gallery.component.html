@@ -1,0 +1,18 @@
+<div class="card">
+    <p-tabMenu 
+        [model]="items" 
+        [activeItem]="activeItem" 
+        (activeItemChange)="onActiveItemChange($event)" />
+</div>
+
+@switch (section) {
+    @case ('0') {
+      Case A.
+    }
+    @case ('1') {
+      Case B.
+    }
+    @default {
+      Default case.
+    }
+  }

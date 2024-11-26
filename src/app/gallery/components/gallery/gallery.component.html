@@ -1,13 +1,38 @@
-<div class="card flex justify-content-center">
-
-    @for (item of photos; track item.name) {
-        <p-image class="grid"
-        [src]="item.itemImageSrc" 
-        [previewImageSrc]="item.thumbnailImageSrc" 
-        alt="Image" 
-        width="250" 
-        [preview]="true" />
-        } @empty {
-        <li>There are no items.</li>
+<div class="gallery-container">
+    <div class="gallery">
+        @for (data of galleryData; track data.imageAlt; let i = $index){
+        <div class="gallery-image">
+            <img (click)="onPreviewImage(i)" [src]="data.imageSrc" [alt]="data.imageAlt">
+        </div>
         }
+    </div>
+    @if (showMask) {
+    <div class="preview">
+        @if (showCount) {
+        <span class="count">{{currentindex +1}} / {{totalImageCount}}</span>
+        }
+        @if(previewImage) {
+        <button class="close-btn" (click)="onClosePreview()">
+            <i class="pi pi-times"></i>
+        </button>
+        }
+        @if(controls) {
+        <button class="btn-preview-carousel btn-prev" (click)="prevImage()">
+            <i class="far fa-arrow-circle-left icon-lightbox-carousel pi pi-arrow-left"></i>
+        </button>
+        }
+        @if(controls) {
+        <button class="btn-preview-carousel btn-next" (click)="nextImage()">
+            <i class="far fa-arrow-circle-left icon-lightbox-carousel pi pi-arrow-right"></i>
+
+        </button>
+        }
+        @if(previewImage)
+        {
+        <div class="preview-img">
+            <img [src]="currentPreviewImage.imageSrc" [alt]="currentPreviewImage.imageAlt">
+        </div>
+        }
+    </div>
+    }
 </div>

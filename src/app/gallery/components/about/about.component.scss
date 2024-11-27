@@ -1,92 +1,87 @@
 .about-container {
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #34495e;
+  text-align: justify;
+}
+
+strong {
+  color: #e74c3c;
+}
+
+.bible-verse {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .law {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media li {
+  margin: 0 10px;
+}
+
+.social-media a {
+  color: #333;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-container {
     padding-left: 10rem;
     padding-right: 10rem;
     padding-top: 3rem;
+  }
 }
-  
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #2c3e50;
-      text-align: center;
-    }
-  
-    p {
-      font-size: 1.125rem;
-      line-height: 1.6;
-      margin-bottom: 15px;
-      color: #34495e;
-      text-align: justify;
-    }
-  
-    strong {
-      color: #e74c3c;
-    }
-  
-    .bible-verse {
-      margin-top: 30px;
-      font-size: 1.5rem;
-      color: #2c3e50;
-      text-align: center;
-      border-top: 1px solid #e0e0e0;
-      padding-top: 20px;
-    }
-  
-  
-  footer {
-      background-color: #f0f0f0;
-      padding: 15px;
-      text-align: center;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      .law{
-        display: flex;
-        justify-content: end;
-      }
-  }
-  
-  .social-media {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-  }
-  
-  .social-media li {
-      margin: 0 10px;
-  }
-  
-  .social-media a {
-      color: #333;
-      font-size: 24px;
-  }
 
- 
+@media screen and (max-width: 800px) {
+  .about-container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+  }
+}
 
-
-    @media screen and (max-width: 1024px) {
-      .sobre-container {
-        padding-left: 10rem;
-        padding-right: 10rem;
-        padding-top: 3rem;
-    }
-    }
-    
-    @media screen and (max-width: 800px) {
-      .sobre-container {
-        padding-left: 5rem;
-        padding-right: 5rem;
-        padding-top: 2rem;
-    }
-    }
-    
-    @media screen and (max-width: 650px) {
-      .sobre-container {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 1rem;
-    }
-    }
-    
+@media screen and (max-width: 650px) {
+  .about-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+  }
+}
